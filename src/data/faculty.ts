@@ -1,8 +1,8 @@
 export const faculty = [
   {
-    name: 'Ayesha Khan',
+    name: 'Muhammad Siddique',
     role: 'Principal',
-    bio: 'Leads academic vision, culture, and family partnership at TIME School System Mial.',
+    bio: 'Leads academic vision, culture, and family partnership at Time School System Mial.',
   },
   {
     name: 'Faculty Team',

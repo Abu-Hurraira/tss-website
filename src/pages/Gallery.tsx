@@ -5,7 +5,7 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function Gallery() {
   usePageSeo({
-    title: 'Gallery — TIME School System Mial',
+    title: 'Gallery — Time School System Mial',
     description: 'Browse campus, academics, events, and student life photography from TSS Mial.',
     path: '/site/gallery',
   })

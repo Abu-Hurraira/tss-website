@@ -1,5 +1,7 @@
+import { motion } from 'framer-motion'
 import { Breadcrumbs } from '@/components/navigation/Breadcrumbs'
-import { Button } from '@/components/common/Button'
+import { useReducedMotion } from '@/hooks/useReducedMotion'
+import { fadeUp } from '@/lib/animations'
 import { cn } from '@/lib/utils'
 
 type Props = {
@@ -11,30 +13,54 @@ type Props = {
 }
 
 export function PageHero({ title, description, crumbs, image, className }: Props) {
+  const reduced = useReducedMotion()
+
   return (
     <section className={cn('relative overflow-hidden pt-28 md:pt-32', className)}>
       <div className="absolute inset-0">
-        <img
+        <motion.img
           src={image || '/images/gallery/campus/campus-building-courtyard.jpg'}
           alt=""
+          loading="eager"
+          decoding="async"
           className="h-full w-full object-cover"
+          initial={reduced ? false : { scale: 1.08 }}
+          animate={reduced ? undefined : { scale: 1 }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/80 to-navy/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/78 to-navy/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy/55 via-transparent to-navy/25" />
       </div>
-      <div className="container-wide relative section-pad py-16 md:py-20">
-        <Breadcrumbs
-          items={[{ label: 'Home', to: '/site' }, ...crumbs]}
-          className="text-white/65 [&_a:hover]:text-white [&_span[aria-current]]:text-white"
-        />
-        <h1 className="font-display mt-5 max-w-3xl text-4xl leading-tight font-semibold text-white md:text-5xl lg:text-6xl">
+
+      <motion.div
+        className="container-wide relative section-pad py-16 md:py-20"
+        initial={reduced ? false : 'hidden'}
+        animate={reduced ? undefined : 'visible'}
+        variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+      >
+        <motion.div variants={fadeUp} transition={{ duration: 0.55 }}>
+          <Breadcrumbs
+            items={[{ label: 'Home', to: '/site' }, ...crumbs]}
+            className="text-white/70 [&_a:hover]:text-white [&_span[aria-current]]:text-white"
+          />
+        </motion.div>
+        <motion.h1
+          variants={fadeUp}
+          transition={{ duration: 0.6 }}
+          className="font-display mt-5 max-w-3xl text-4xl leading-tight font-semibold text-white md:text-5xl lg:text-6xl"
+        >
           {title}
-        </h1>
-        {description && <p className="mt-4 max-w-2xl text-base text-white/80 md:text-lg">{description}</p>}
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Button to="/site/apply" variant="orange">Apply Now</Button>
-          <Button to="/site/contact" variant="ghost">Contact Admissions</Button>
-        </div>
-      </div>
+        </motion.h1>
+        {description && (
+          <motion.p
+            variants={fadeUp}
+            transition={{ duration: 0.6 }}
+            className="mt-4 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg"
+          >
+            {description}
+          </motion.p>
+        )}
+      </motion.div>
     </section>
   )
 }

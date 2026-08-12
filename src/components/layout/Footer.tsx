@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { footerLinks } from '@/data/navigation'
 import { primaryCampus } from '@/data/campuses'
 import { site } from '@/data/site'
-import { PORTAL_LOGIN_URL } from '@/lib/constants'
 
 export function Footer() {
   return (
@@ -12,17 +11,11 @@ export function Footer() {
           <Link to="/site" className="inline-flex items-center gap-3">
             <img src="/logo.png" alt="" className="h-14 w-14 rounded-full object-cover" />
             <div>
-              <p className="text-lg font-bold">{site.name}</p>
-              <p className="text-sm text-white/65">{site.campusName}</p>
+              <p className="text-lg font-bold">{site.campusName}</p>
+              <p className="text-sm text-white/65">ESTB {site.established}</p>
             </div>
           </Link>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/75">{site.motto}</p>
-          <a
-            href={PORTAL_LOGIN_URL}
-            className="mt-6 inline-flex rounded-full border border-white/25 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
-          >
-            Portal Login
-          </a>
         </div>
 
         <div>
@@ -66,7 +59,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container-wide flex flex-col gap-3 py-5 text-sm text-white/55 md:flex-row md:items-center md:justify-between">
           <p>
-            © {new Date().getFullYear()} {site.name}. All rights reserved.
+            © {new Date().getFullYear()} {site.campusName}. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link to="/site/contact" className="hover:text-white">

@@ -77,7 +77,7 @@ export function AdmissionFAQ({ items = faqs }: { items?: { question: string; ans
 export function ApplyNowBand() {
   return (
     <div className="mt-10">
-      <Button to="/site/apply" variant="orange">Apply Now</Button>
+      <Button to="/site/contact" variant="orange">Contact Admissions</Button>
     </div>
   )
 }

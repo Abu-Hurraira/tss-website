@@ -1,6 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
 import { PageHero } from '@/components/hero/PageHero'
-import { Button } from '@/components/common/Button'
 import { getArticleBySlug } from '@/data/news'
 import { usePageSeo } from '@/lib/seo'
 import { formatDate } from '@/lib/utils'
@@ -10,8 +9,8 @@ export default function EventDetail() {
   const item = getArticleBySlug(slug)
 
   usePageSeo({
-    title: item ? `${item.title} — TIME School System` : 'Event — TIME School System',
-    description: item?.summary || 'Event details from TIME School System Mial.',
+    title: item ? `${item.title} — Time School System Mial` : 'Event — Time School System Mial',
+    description: item?.summary || 'Event details from Time School System Mial.',
     path: `/site/events/${slug}`,
     image: item?.image,
   })
@@ -21,7 +20,9 @@ export default function EventDetail() {
       <section className="section-pad pt-32">
         <div className="container-site text-center">
           <h1 className="font-display text-4xl text-navy">Event not found</h1>
-          <Link to="/site/events" className="mt-4 inline-block text-brand">Back to events</Link>
+          <Link to="/site/events" className="mt-4 inline-block text-brand">
+            Back to events
+          </Link>
         </div>
       </section>
     )
@@ -42,9 +43,6 @@ export default function EventDetail() {
               {paragraph}
             </p>
           ))}
-          <div className="mt-6">
-            <Button to="/site/apply" variant="orange">Apply Now</Button>
-          </div>
         </article>
       </section>
     </>

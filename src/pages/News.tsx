@@ -11,8 +11,8 @@ const filters: Array<'All' | ContentCategory> = ['All', 'News', 'Events', 'Annou
 
 export default function News() {
   usePageSeo({
-    title: 'News & Events — TIME School System Mial',
-    description: 'Latest news, events, and announcements from TIME School System Mial.',
+    title: 'News & Events — Time School System Mial',
+    description: 'Latest news, events, and announcements from Time School System Mial.',
     path: '/site/news',
   })
 

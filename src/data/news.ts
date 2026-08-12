@@ -4,12 +4,12 @@ export const newsItems: NewsItem[] = [
   {
     slug: 'welcome-to-the-new-academic-year',
     title: 'Welcome to the New Academic Year',
-    summary: 'Students, families, and faculty begin another year of ambitious learning at TIME School System Mial.',
+    summary: 'Students, families, and faculty begin another year of ambitious learning at Time School System Mial.',
     category: 'Announcements',
     date: '2026-08-01',
     image: '/images/news/school-event-1.jpg',
     body: [
-      'TIME School System Mial welcomes families to a new academic year filled with purposeful teaching and enriched activities.',
+      'Time School System Mial welcomes families to a new academic year filled with purposeful teaching and enriched activities.',
       'Orientation sessions introduce classroom expectations, communication channels, and the habits that help students thrive.',
       'We look forward to partnering with parents as we continue empowering future leaders through quality education.',
     ],
@@ -34,7 +34,7 @@ export const newsItems: NewsItem[] = [
     date: '2026-06-22',
     image: '/images/gallery/academics/art-corner-classroom.jpg',
     body: [
-      'A vibrant reading culture is central to academic success at TIME School System Mial.',
+      'A vibrant reading culture is central to academic success at Time School System Mial.',
       'Families are encouraged to protect daily reading time at home to reinforce classroom progress.',
     ],
   },
@@ -72,7 +72,7 @@ export const eventItems: EventItem[] = [
     date: '2026-12-15',
     image: '/images/gallery/events/academic-achievement.jpg',
     body: [
-      'Prize Day recognises excellence in academics, arts, sports, and service at TIME School System Mial.',
+      'Prize Day recognises excellence in academics, arts, sports, and service at Time School System Mial.',
     ],
   },
 ]

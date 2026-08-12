@@ -6,7 +6,7 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function About() {
   usePageSeo({
-    title: 'About — TIME School System Mial',
+    title: 'About — Time School System Mial',
     description: `Learn about ${site.campusName}, established ${site.established}.`,
     path: '/site/about',
   })
@@ -14,8 +14,8 @@ export default function About() {
   return (
     <>
       <PageHero
-        title="About TIME School System Mial"
-        description="An institution committed to academic excellence, character formation, and modern learning since 2021."
+        title="About Time School System Mial"
+        description="An institution committed to academic excellence, character formation, and modern learning since 2018."
         crumbs={[{ label: 'About' }]}
         image="/images/campus/campus-exterior-1.jpg"
       />
@@ -24,7 +24,7 @@ export default function About() {
           <SectionHeading
             eyebrow="Our story"
             title="Built to educate with purpose."
-            description="TIME School System Mial was established to offer families a rigorous yet nurturing academic environment — where strong foundations, ethical leadership, and contemporary pedagogy work together."
+            description="Time School System Mial was established to offer families a rigorous yet nurturing academic environment — where strong foundations, ethical leadership, and contemporary pedagogy work together."
           />
           <div className="rounded-[24px] border border-border bg-brand-soft p-8">
             <p className="font-display text-2xl leading-relaxed text-navy md:text-3xl">“{site.motto}”</p>

@@ -10,10 +10,16 @@ export function Hero() {
   return (
     <section className="relative min-h-[100svh] overflow-hidden">
       <div className="absolute inset-0">
-        <img
+        <motion.img
           src="/images/gallery/campus/campus-building-courtyard.jpg"
           alt={`${site.campusName} courtyard`}
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
           className="h-full w-full object-cover"
+          initial={reduced ? false : { scale: 1.1 }}
+          animate={reduced ? undefined : { scale: 1 }}
+          transition={{ duration: 1.4, ease: 'easeOut' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/78 to-navy/45" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-navy/30" />
@@ -36,7 +42,7 @@ export function Hero() {
             A premium academic community in Mial where rigorous learning, character, and modern campus life prepare students for tomorrow.
           </motion.p>
           <motion.div variants={fadeUp} transition={{ duration: 0.65 }} className="mt-8 flex flex-wrap gap-3">
-            <Button to="/site/apply" variant="orange">Apply Now</Button>
+            <Button to="/site/admissions" variant="orange">Explore Admissions</Button>
             <Button to="/site/about" variant="ghost">Discover TSS</Button>
           </motion.div>
         </motion.div>

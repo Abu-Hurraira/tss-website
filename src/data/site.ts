@@ -1,13 +1,13 @@
 import type { Leadership, Pillar, TrustStat } from '@/types/school'
 
 export const site = {
-  name: 'TIME School System',
+  name: 'Time School System',
   shortName: 'TSS',
-  campusName: 'TIME School System Mial',
+  campusName: 'Time School System Mial',
   motto: 'Empowering Future Leaders Through Quality Education.',
-  established: 2021,
+  established: 2018,
   email: 'info@timeschool.edu',
-  phone: '+92 000 0000000',
+  phone: '0301 5391013',
   website: 'https://timeschool.edu',
   address: 'Mial, Pakistan',
   social: {
@@ -22,7 +22,7 @@ export const trustStats: TrustStat[] = [
   { id: 'students', label: 'Students', value: 600, suffix: '+' },
   { id: 'faculty', label: 'Faculty & Staff', value: 45, suffix: '+' },
   { id: 'programs', label: 'Academic Pathways', value: 8, suffix: '' },
-  { id: 'years', label: 'Years of Excellence', value: new Date().getFullYear() - 2021, suffix: '+' },
+  { id: 'years', label: 'Years of Excellence', value: new Date().getFullYear() - 2018, suffix: '+' },
 ]
 
 export const pillars: Pillar[] = [
@@ -57,10 +57,10 @@ export const pillars: Pillar[] = [
 ]
 
 export const leadership: Leadership = {
-  name: 'Ayesha Khan',
+  name: 'Muhammad Siddique',
   title: 'Principal',
   message:
-    'At TIME School System Mial, we believe education is more than examination success. It is the careful shaping of intellect, character, and confidence. Our educators partner with families to nurture curious minds and compassionate leaders.',
+    'At Time School System Mial, we believe education is more than examination success. It is the careful shaping of intellect, character, and confidence. Our educators partner with families to nurture curious minds and compassionate leaders.',
   portrait: '/images/leadership/student-life-1.jpg',
 }
 

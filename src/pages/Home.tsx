@@ -12,8 +12,8 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function Home() {
   usePageSeo({
-    title: 'TIME School System — Empowering Future Leaders Through Quality Education',
-    description: `${site.motto} Visit TIME School System Mial.`,
+    title: 'Time School System — Empowering Future Leaders Through Quality Education',
+    description: `${site.motto} Visit Time School System Mial.`,
     path: '/site',
   })
 

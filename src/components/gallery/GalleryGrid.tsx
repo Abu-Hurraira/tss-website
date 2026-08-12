@@ -47,7 +47,13 @@ export function GalleryItemButton({
       onClick={onOpen}
     >
       <span className="relative block overflow-hidden">
-        <img src={item.src} alt={item.alt} loading="lazy" className="w-full object-cover transition duration-500 group-hover:scale-105" />
+        <img
+          src={item.src}
+          alt={item.alt}
+          loading="lazy"
+          decoding="async"
+          className="w-full object-cover transition duration-500 group-hover:scale-105"
+        />
         <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/80 to-transparent p-4 text-left text-sm text-white opacity-0 transition group-hover:opacity-100">
           {item.caption}
         </span>

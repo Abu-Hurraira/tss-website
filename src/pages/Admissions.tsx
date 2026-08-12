@@ -12,8 +12,8 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function Admissions() {
   usePageSeo({
-    title: 'Admissions — TIME School System Mial',
-    description: 'Admissions process, requirements, timelines, and FAQs for TIME School System Mial.',
+    title: 'Admissions — Time School System Mial',
+    description: 'Admissions process, requirements, timelines, and FAQs for Time School System Mial.',
     path: '/site/admissions',
   })
 
@@ -27,10 +27,10 @@ export default function Admissions() {
       />
       <section className="section-pad">
         <div className="container-wide">
-          <SectionHeading eyebrow="Process" title="Your path to joining TIME School System Mial." />
+          <SectionHeading eyebrow="Process" title="Your path to joining Time School System Mial." />
           <AdmissionSteps />
           <div className="mt-10">
-            <Button to="/site/apply" variant="orange">Apply Now</Button>
+            <Button to="/site/contact" variant="orange">Contact Admissions</Button>
           </div>
         </div>
       </section>

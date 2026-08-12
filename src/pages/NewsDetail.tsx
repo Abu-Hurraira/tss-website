@@ -9,8 +9,8 @@ export default function NewsDetail() {
   const item = getArticleBySlug(slug)
 
   usePageSeo({
-    title: item ? `${item.title} — TIME School System` : 'Article — TIME School System',
-    description: item?.summary || 'News from TIME School System Mial.',
+    title: item ? `${item.title} — Time School System` : 'Article — Time School System',
+    description: item?.summary || 'News from Time School System Mial.',
     path: `/site/news/${slug}`,
     image: item?.image,
   })

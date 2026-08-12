@@ -4,7 +4,7 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function NotFound() {
   usePageSeo({
-    title: 'Page not found — TIME School System',
+    title: 'Page not found — Time School System',
     description: 'The page you requested could not be found.',
     path: '/404',
   })

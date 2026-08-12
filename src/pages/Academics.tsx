@@ -7,7 +7,7 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function Academics() {
   usePageSeo({
-    title: 'Academics — TIME School System Mial',
+    title: 'Academics — Time School System Mial',
     description: 'Explore academic programs, departments, and learning facilities at TSS Mial.',
     path: '/site/academics',
   })

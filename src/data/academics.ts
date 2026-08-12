@@ -27,7 +27,7 @@ export const programs: Program[] = [
   {
     id: 'secondary',
     title: 'Secondary / Senior',
-    ages: 'Grades 9 — 11',
+    ages: 'Grades 9 — 10',
     summary:
       'Focused academic pathways with examination readiness, counseling support, and character formation for university and life.',
     highlights: ['Sciences & mathematics', 'Humanities options', 'Career guidance', 'Leadership programmes'],

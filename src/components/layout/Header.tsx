@@ -4,7 +4,6 @@ import { Menu, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { galleryNewsItems, primaryNav } from '@/data/navigation'
 import { site } from '@/data/site'
-import { PORTAL_LOGIN_URL } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 import { useScrollHeader } from '@/hooks/useScrollHeader'
 import { Navbar } from '@/components/navigation/Navbar'
@@ -33,7 +32,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
                 key={link.to}
                 to={link.to}
                 onClick={onClose}
-                className="rounded-xl px-4 py-3 text-base font-semibold text-ink-secondary hover:bg-brand-soft"
+                className="rounded-xl px-4 py-3 text-base font-medium text-ink-secondary hover:bg-brand-soft"
               >
                 {link.label}
               </Link>
@@ -58,21 +57,6 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             >
               Contact
             </Link>
-            <div className="mt-4 grid gap-2">
-              <Link
-                to="/site/apply"
-                onClick={onClose}
-                className="rounded-full bg-brand px-4 py-3 text-center text-sm font-bold text-white"
-              >
-                Apply Now
-              </Link>
-              <a
-                href={PORTAL_LOGIN_URL}
-                className="rounded-full border border-border px-4 py-3 text-center text-sm font-semibold text-navy"
-              >
-                Portal Login
-              </a>
-            </div>
           </div>
         </motion.div>
       )}
@@ -83,36 +67,39 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
 export function Header() {
   const scrolled = useScrollHeader()
   const [open, setOpen] = useState(false)
+  const solid = scrolled || open
 
   return (
     <header
       className={cn(
-        'fixed inset-x-0 top-0 z-50 transition-all duration-300',
-        scrolled || open
+        'fixed inset-x-0 top-0 z-50 transition-all duration-500',
+        solid
           ? 'border-b border-border/80 bg-white/95 shadow-[0_8px_30px_rgb(8_43_76/0.08)] backdrop-blur-md'
           : 'border-b border-transparent bg-transparent',
       )}
     >
       <div className="container-wide flex h-[72px] items-center justify-between gap-4 lg:h-20">
-        <Link to="/site" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link to="/site" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
           <img
             src="/logo.png"
-            alt={`${site.name} logo`}
-            className="h-12 w-12 rounded-full object-cover md:h-14 md:w-14"
+            alt={`${site.campusName} logo`}
+            className="h-12 w-12 shrink-0 rounded-full object-cover md:h-14 md:w-14"
+            width={56}
+            height={56}
           />
-          <div className="leading-tight">
+          <div className="min-w-0 leading-tight">
             <p
               className={cn(
-                'text-sm font-bold tracking-wide md:text-base',
-                scrolled || open ? 'text-navy' : 'text-white',
+                'truncate text-sm font-semibold tracking-wide md:text-base',
+                solid ? 'text-navy' : 'text-white',
               )}
             >
-              TIME School
+              Time School System
             </p>
             <p
               className={cn(
-                'text-[11px] font-medium tracking-[0.14em] uppercase',
-                scrolled || open ? 'text-ink-muted' : 'text-white/70',
+                'text-[11px] font-medium tracking-[0.16em] uppercase',
+                solid ? 'text-ink-muted' : 'text-white/75',
               )}
             >
               Mial
@@ -120,34 +107,13 @@ export function Header() {
           </div>
         </Link>
 
-        <div
-          className={cn(
-            'hidden rounded-full px-2 py-1 transition lg:block',
-            scrolled || open ? 'bg-transparent' : 'bg-white/95 shadow-[0_10px_30px_rgb(8_43_76/0.12)]',
-          )}
-        >
-          <Navbar />
-        </div>
-
-        <div className="hidden items-center gap-2 xl:flex">
-          <a
-            href={PORTAL_LOGIN_URL}
-            className={cn(
-              'rounded-full px-4 py-2.5 text-sm font-semibold transition',
-              scrolled
-                ? 'border border-border text-navy hover:bg-brand-soft'
-                : 'border border-white/30 text-white hover:bg-white/10',
-            )}
-          >
-            Portal Login
-          </a>
-        </div>
+        <Navbar transparent={!solid} />
 
         <button
           type="button"
           className={cn(
             'inline-flex h-11 w-11 items-center justify-center rounded-xl border lg:hidden',
-            scrolled || open ? 'border-border text-navy' : 'border-white/30 text-white',
+            solid ? 'border-border text-navy' : 'border-white/35 text-white',
           )}
           aria-expanded={open}
           aria-controls="mobile-nav"
