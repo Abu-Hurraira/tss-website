@@ -1,0 +1,23 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies / build
+node_modules
+dist
+dist-ssr
+*.local
+
+# Logs / editor
+logs
+*.log
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+
+# Contact inquiry store (local)
+server/data/
+
+# Oxlint / temp
+.oxlintcache
