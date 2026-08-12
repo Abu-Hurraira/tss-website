@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+
+  --color-navy: #082b4c;
+  --color-brand: #0c558f;
+  --color-brand-hover: #094474;
+  --color-brand-muted: #e8f1f8;
+  --color-brand-soft: #f4f8fc;
+
+  --color-ink: #082b4c;
+  --color-ink-secondary: #35516f;
+  --color-ink-muted: #5b6b82;
+  --color-ink-faint: #8190a5;
+
+  --color-canvas: #f7faff;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1f5f9;
+  --color-border: #dce6f2;
+  --color-divider: #e8eef6;
+
+  --color-success: #16a34a;
+  --color-success-soft: #eaf9ef;
+  --color-danger: #ef4444;
+  --color-danger-soft: #fff0f0;
+
+  --color-accent-orange: #f97316;
+  --color-accent-orange-soft: #fff3e8;
+
+  --radius-card: 12px;
+  --radius-control: 10px;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  html, body, #root { min-height: 100%; }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  :focus-visible { outline: 2px solid var(--color-brand); outline-offset: 3px; }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .container-site { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
+  .container-wide { width: min(1280px, calc(100% - 2rem)); margin-inline: auto; }
+  .section-pad { padding-block: clamp(3.5rem, 6vw, 6rem); }
+  .gradient-navy {
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 20%, rgb(12 85 143 / 0.35), transparent 55%),
+      radial-gradient(ellipse 70% 50% at 80% 10%, rgb(249 115 22 / 0.12), transparent 45%),
+      linear-gradient(160deg, #061f38 0%, #082b4c 45%, #0a3a63 100%);
+  }
+  .gradient-soft {
+    background:
+      radial-gradient(ellipse 90% 70% at 10% 0%, rgb(232 241 248 / 0.9), transparent 50%),
+      radial-gradient(ellipse 60% 50% at 100% 20%, rgb(255 243 232 / 0.55), transparent 45%),
+      var(--color-canvas);
+  }
+}
