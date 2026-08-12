@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { SITE_URL } from '@/lib/constants'
+import { asset } from '@/lib/asset'
 
 type SeoProps = {
   title: string
@@ -17,12 +18,13 @@ export function usePageSeo({
   useEffect(() => {
     document.title = title
     const canonicalHref = `${SITE_URL.replace(/\/$/, '')}${path}`
+    const imageUrl = image.startsWith('http') ? image : `${SITE_URL.replace(/\/$/, '')}${asset(image)}`
 
     setMeta('name', 'description', description)
     setMeta('property', 'og:title', title)
     setMeta('property', 'og:description', description)
     setMeta('property', 'og:url', canonicalHref)
-    setMeta('property', 'og:image', image.startsWith('http') ? image : `${SITE_URL}${image}`)
+    setMeta('property', 'og:image', imageUrl)
     setMeta('name', 'twitter:title', title)
     setMeta('name', 'twitter:description', description)
 

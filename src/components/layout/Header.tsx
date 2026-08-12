@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { galleryNewsItems, primaryNav } from '@/data/navigation'
 import { site } from '@/data/site'
 import { cn } from '@/lib/utils'
+import { asset } from '@/lib/asset'
 import { useScrollHeader } from '@/hooks/useScrollHeader'
 import { Navbar } from '@/components/navigation/Navbar'
 
@@ -50,13 +51,6 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
                 {item.label}
               </Link>
             ))}
-            <Link
-              to="/site/contact"
-              onClick={onClose}
-              className="rounded-xl px-4 py-3 text-base font-medium text-ink-secondary hover:bg-brand-soft"
-            >
-              Contact
-            </Link>
           </div>
         </motion.div>
       )}
@@ -81,7 +75,7 @@ export function Header() {
       <div className="container-wide flex h-[72px] items-center justify-between gap-4 lg:h-20">
         <Link to="/site" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
           <img
-            src="/logo.png"
+            src={asset('/logo.png')}
             alt={`${site.campusName} logo`}
             className="h-12 w-12 shrink-0 rounded-full object-cover md:h-14 md:w-14"
             width={56}

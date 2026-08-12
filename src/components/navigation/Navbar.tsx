@@ -103,6 +103,9 @@ export function Navbar({
         Admissions
       </NavLink>
       <NavDropdown transparent={transparent} />
+      <NavLink to="/site/contact" className={({ isActive }) => linkClass(transparent, isActive)}>
+        Contact
+      </NavLink>
     </nav>
   )
 }

@@ -1,8 +1,10 @@
+import { useEffect } from 'react'
 import { PageHero } from '@/components/hero/PageHero'
 import { ContactForm } from '@/components/forms/ContactForm'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import { primaryCampus } from '@/data/campuses'
 import { site } from '@/data/site'
+import { asset } from '@/lib/asset'
 import { usePageSeo } from '@/lib/seo'
 
 export default function Contact() {
@@ -11,6 +13,13 @@ export default function Contact() {
     description: 'Contact Time School System Mial admissions and campus office.',
     path: '/site/contact',
   })
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, 80)
+    return () => window.clearTimeout(timer)
+  }, [])
 
   return (
     <>
@@ -22,7 +31,10 @@ export default function Contact() {
       />
       <section className="section-pad">
         <div className="container-wide grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="rounded-[22px] border border-border bg-surface p-6 md:p-8">
+          <div
+            id="contact-form"
+            className="scroll-mt-28 rounded-[22px] border border-border bg-surface p-6 md:p-8"
+          >
             <SectionHeading
               eyebrow="Write to us"
               title="Send a message"
@@ -37,16 +49,25 @@ export default function Contact() {
               <h2 className="text-xl font-semibold text-navy">General contact</h2>
               <p className="mt-4 text-sm text-ink-secondary">
                 Email:{' '}
-                <a className="font-semibold text-brand" href={`mailto:${site.email}`}>{site.email}</a>
+                <a className="font-semibold text-brand" href={`mailto:${site.email}`}>
+                  {site.email}
+                </a>
               </p>
               <p className="mt-2 text-sm text-ink-secondary">
                 Phone:{' '}
-                <a className="font-semibold text-brand" href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a>
+                <a className="font-semibold text-brand" href={`tel:${site.phone.replace(/\s/g, '')}`}>
+                  {site.phone}
+                </a>
               </p>
               <p className="mt-4 text-sm text-ink-muted">Office hours: Monday–Friday, 9:00 AM – 3:00 PM</p>
             </div>
             <div className="overflow-hidden rounded-[22px] border border-border bg-surface">
-              <img src={primaryCampus.image} alt="" className="aspect-[16/8] w-full object-cover" loading="lazy" />
+              <img
+                src={asset(primaryCampus.image)}
+                alt=""
+                className="aspect-[16/8] w-full object-cover"
+                loading="lazy"
+              />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-navy">{primaryCampus.name}</h3>
                 <p className="mt-1 text-sm text-ink-muted">{primaryCampus.location}</p>

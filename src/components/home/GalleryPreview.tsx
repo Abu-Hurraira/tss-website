@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import { galleryItems } from '@/data/gallery'
+import { asset } from '@/lib/asset'
 
 export function GalleryPreview() {
   return (
@@ -20,7 +21,7 @@ export function GalleryPreview() {
         <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
           {galleryItems.slice(0, 8).map((item, i) => (
             <div key={item.id} className={`overflow-hidden rounded-[16px] ${i === 0 || i === 5 ? 'md:col-span-2 md:row-span-2' : ''}`}>
-              <img src={item.src} alt={item.alt} loading="lazy" className="h-full min-h-[140px] w-full object-cover md:min-h-[180px]" />
+              <img src={asset(item.src)} alt={item.alt} loading="lazy" className="h-full min-h-[140px] w-full object-cover md:min-h-[180px]" />
             </div>
           ))}
         </div>

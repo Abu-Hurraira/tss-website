@@ -4,6 +4,7 @@ import { site } from '@/data/site'
 import { fadeUp } from '@/lib/animations'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { Button } from '@/components/common/Button'
+import { asset } from '@/lib/asset'
 
 export function Hero() {
   const reduced = useReducedMotion()
@@ -11,7 +12,7 @@ export function Hero() {
     <section className="relative min-h-[100svh] overflow-hidden">
       <div className="absolute inset-0">
         <motion.img
-          src="/images/gallery/campus/campus-building-courtyard.jpg"
+          src={asset('/images/gallery/campus/campus-building-courtyard.jpg')}
           alt={`${site.campusName} courtyard`}
           loading="eager"
           decoding="async"

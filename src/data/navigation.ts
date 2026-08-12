@@ -5,6 +5,7 @@ export const primaryNav: NavLink[] = [
   { to: '/site/about', label: 'About' },
   { to: '/site/academics', label: 'Academics' },
   { to: '/site/admissions', label: 'Admissions' },
+  { to: '/site/contact', label: 'Contact' },
 ]
 
 export const galleryNewsItems: NavDropdownItem[] = [

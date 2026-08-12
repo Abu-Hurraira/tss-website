@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import { primaryCampus } from '@/data/campuses'
+import { asset } from '@/lib/asset'
 
 export function CampusPreview() {
   return (
@@ -13,7 +14,7 @@ export function CampusPreview() {
         />
         <article className="mt-10 overflow-hidden rounded-[22px] border border-border bg-surface lg:grid lg:grid-cols-2">
           <div className="aspect-[16/10] lg:aspect-auto">
-            <img src={primaryCampus.image} alt={primaryCampus.name} className="h-full w-full object-cover" loading="lazy" />
+            <img src={asset(primaryCampus.image)} alt={primaryCampus.name} className="h-full w-full object-cover" loading="lazy" />
           </div>
           <div className="p-6 md:p-10">
             <p className="text-xs font-semibold tracking-[0.16em] text-brand uppercase">{primaryCampus.city}</p>

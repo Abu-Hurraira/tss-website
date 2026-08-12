@@ -2,6 +2,7 @@ import { PageHero } from '@/components/hero/PageHero'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import { AdmissionsCTA } from '@/components/home/AdmissionsCTA'
 import { leadership, site, values } from '@/data/site'
+import { asset } from '@/lib/asset'
 import { usePageSeo } from '@/lib/seo'
 
 export default function About() {
@@ -35,7 +36,7 @@ export default function About() {
       <section className="section-pad bg-brand-soft/50">
         <div className="container-wide grid gap-10 lg:grid-cols-2 lg:items-center">
           <div className="overflow-hidden rounded-[24px]">
-            <img src={leadership.portrait} alt={`${leadership.name}, ${leadership.title}`} className="aspect-[4/5] w-full object-cover" />
+            <img src={asset(leadership.portrait)} alt={`${leadership.name}, ${leadership.title}`} className="aspect-[4/5] w-full object-cover" loading="lazy" decoding="async" />
           </div>
           <div>
             <SectionHeading eyebrow="Leadership" title="A message from the Principal" />

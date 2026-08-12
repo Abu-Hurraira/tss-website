@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { footerLinks } from '@/data/navigation'
 import { primaryCampus } from '@/data/campuses'
 import { site } from '@/data/site'
+import { asset } from '@/lib/asset'
 
 export function Footer() {
   return (
@@ -9,7 +10,7 @@ export function Footer() {
       <div className="container-wide section-pad grid gap-12 lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
         <div>
           <Link to="/site" className="inline-flex items-center gap-3">
-            <img src="/logo.png" alt="" className="h-14 w-14 rounded-full object-cover" />
+            <img src={asset('/logo.png')} alt="" className="h-14 w-14 rounded-full object-cover" width={56} height={56} />
             <div>
               <p className="text-lg font-bold">{site.campusName}</p>
               <p className="text-sm text-white/65">ESTB {site.established}</p>

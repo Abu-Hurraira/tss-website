@@ -1,6 +1,7 @@
 import { SectionHeading } from '@/components/common/SectionHeading'
 import { Reveal } from '@/components/common/Reveal'
 import { pillars } from '@/data/site'
+import { asset } from '@/lib/asset'
 
 export function WhyTimeSchool() {
   return (
@@ -25,7 +26,7 @@ export function WhyTimeSchool() {
               }
             >
               <img
-                src={pillar.image}
+                src={asset(pillar.image)}
                 alt=""
                 className="absolute inset-0 h-full w-full object-cover"
                 loading="lazy"

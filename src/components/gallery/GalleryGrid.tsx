@@ -3,6 +3,7 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import type { GalleryCategory, GalleryItem } from '@/types/gallery'
 import { galleryCategories } from '@/data/gallery'
+import { asset } from '@/lib/asset'
 import { cn } from '@/lib/utils'
 
 export function GalleryFilter({
@@ -48,7 +49,7 @@ export function GalleryItemButton({
     >
       <span className="relative block overflow-hidden">
         <img
-          src={item.src}
+          src={asset(item.src)}
           alt={item.alt}
           loading="lazy"
           decoding="async"
@@ -138,7 +139,7 @@ export function GalleryLightbox({
             animate={{ scale: 1, opacity: 1 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <img src={current.src} alt={current.alt} className="mx-auto max-h-[72vh] w-auto rounded-xl object-contain" />
+            <img src={asset(current.src)} alt={current.alt} className="mx-auto max-h-[72vh] w-auto rounded-xl object-contain" />
             <figcaption id={titleId} className="mt-4 text-center text-sm text-white/85">
               {current.caption}
             </figcaption>

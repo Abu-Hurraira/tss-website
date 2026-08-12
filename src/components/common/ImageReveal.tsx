@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
+import { asset } from '@/lib/asset'
 import { cn } from '@/lib/utils'
 
 export function ImageReveal({
@@ -17,7 +18,7 @@ export function ImageReveal({
   return (
     <div className={cn('overflow-hidden', className)}>
       <motion.img
-        src={src}
+        src={asset(src)}
         alt={alt}
         loading={eager ? 'eager' : 'lazy'}
         decoding="async"

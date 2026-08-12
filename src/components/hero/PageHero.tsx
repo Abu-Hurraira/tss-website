@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Breadcrumbs } from '@/components/navigation/Breadcrumbs'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { fadeUp } from '@/lib/animations'
+import { asset } from '@/lib/asset'
 import { cn } from '@/lib/utils'
 
 type Props = {
@@ -19,7 +20,7 @@ export function PageHero({ title, description, crumbs, image, className }: Props
     <section className={cn('relative overflow-hidden pt-28 md:pt-32', className)}>
       <div className="absolute inset-0">
         <motion.img
-          src={image || '/images/gallery/campus/campus-building-courtyard.jpg'}
+          src={asset(image || '/images/gallery/campus/campus-building-courtyard.jpg')}
           alt=""
           loading="eager"
           decoding="async"

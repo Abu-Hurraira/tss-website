@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { formatDate } from '@/lib/utils'
+import { asset } from '@/lib/asset'
 import type { NewsItem } from '@/types/news'
 import { Reveal } from '@/components/common/Reveal'
 
@@ -21,7 +22,7 @@ export function NewsCard({ item }: { item: NewsItem }) {
     <article className="group flex h-full flex-col overflow-hidden rounded-[18px] border border-border bg-surface transition hover:-translate-y-1 hover:shadow-[0_18px_40px_rgb(8_43_76/0.08)]">
       <div className="aspect-[16/10] overflow-hidden">
         <img
-          src={item.image}
+          src={asset(item.image)}
           alt=""
           loading="lazy"
           decoding="async"
