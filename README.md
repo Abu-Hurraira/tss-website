@@ -1,14 +1,17 @@
 # TIME School System — Public Website
 
-Standalone institutional website for **TIME School System Mial**.
+Standalone institutional website for **Time School System Mial**.
+
+## Live site
+
+- **Website:** https://abu-hurraira.github.io/tss-website/site
+- **Repository:** https://github.com/Abu-Hurraira/tss-website
 
 ## Architecture
 
 ```
 Pages → Components → Data → Services → Server
 ```
-
-No `public/` nesting under `src/` — this entire app is public-facing.
 
 ## Quick start
 
@@ -18,18 +21,12 @@ npm install
 npm run dev
 ```
 
-- Website: http://localhost:5174/site  
-- Contact API: http://127.0.0.1:3010  
-
-Portal Login → ERP (`VITE_PORTAL_LOGIN_URL`, default `http://localhost:5173/login`).
-
-## Navbar
-
-Home · About · Academics · Admissions · Gallery & News · **Apply Now**
+- Local website: http://localhost:5174/site  
+- Local contact API: http://127.0.0.1:3010  
 
 ## Campus
 
-Single campus: **TIME School System Mial**
+**Time School System Mial** (ESTB 2018)
 
 ## Docs
 
