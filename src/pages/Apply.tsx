@@ -14,7 +14,6 @@ export default function Apply() {
       <PageHero
         title="Apply Now"
         description="Share a few details and our admissions team will guide you through the next steps."
-        crumbs={[{ label: 'Admissions', to: '/site/admissions' }, { label: 'Apply' }]}
         image="/images/hero/hero-classroom.jpg"
       />
       <section className="section-pad">

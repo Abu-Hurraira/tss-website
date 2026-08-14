@@ -12,7 +12,7 @@ export default function FAQ() {
 
   return (
     <>
-      <PageHero title="FAQ" description="Answers to common questions from families." crumbs={[{ label: 'FAQ' }]} />
+      <PageHero title="FAQ" description="Answers to common questions from families." />
       <section className="section-pad">
         <div className="container-site">
           <AdmissionFAQ items={faqs} />

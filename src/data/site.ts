@@ -19,8 +19,8 @@ export const site = {
 } as const
 
 export const trustStats: TrustStat[] = [
-  { id: 'students', label: 'Students', value: 600, suffix: '+' },
-  { id: 'faculty', label: 'Faculty & Staff', value: 45, suffix: '+' },
+  { id: 'students', label: 'Students', value: 200, suffix: '' },
+  { id: 'faculty', label: 'Faculty & Staff', value: 15, suffix: '' },
   { id: 'programs', label: 'Academic Pathways', value: 8, suffix: '' },
   { id: 'years', label: 'Years of Excellence', value: new Date().getFullYear() - 2018, suffix: '+' },
 ]
@@ -44,7 +44,7 @@ export const pillars: Pillar[] = [
     id: 'modern',
     title: 'Modern Learning Environment',
     description:
-      'Bright classrooms, purposeful labs, and campus spaces that invite curiosity, collaboration, and disciplined study habits.',
+      'Bright classrooms, outdoor play spaces, and a campus that invites curiosity, collaboration, and disciplined study habits.',
     image: '/images/gallery/campus/playground-garden.jpg',
   },
   {

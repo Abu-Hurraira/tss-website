@@ -26,7 +26,6 @@ export default function Contact() {
       <PageHero
         title="Contact"
         description="We would love to hear from you. Send a message and our team will respond shortly."
-        crumbs={[{ label: 'Contact' }]}
         image="/images/gallery/campus/campus-building-courtyard.jpg"
       />
       <section className="section-pad">

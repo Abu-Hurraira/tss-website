@@ -15,8 +15,7 @@ export default function Events() {
       <PageHero
         title="Events"
         description="Open houses, conferences, celebrations, and community gatherings."
-        crumbs={[{ label: 'News & Events', to: '/site/news' }, { label: 'Events' }]}
-        image="/images/news/academic-achievement.jpg"
+        image="/images/news/events-cover.jpg"
       />
       <section className="section-pad">
         <div className="container-wide">

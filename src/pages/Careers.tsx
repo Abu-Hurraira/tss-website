@@ -14,7 +14,6 @@ export default function Careers() {
       <PageHero
         title="Careers"
         description="Join a team committed to academic excellence and student growth."
-        crumbs={[{ label: 'Careers' }]}
       />
       <section className="section-pad">
         <div className="container-site grid gap-10 lg:grid-cols-2">

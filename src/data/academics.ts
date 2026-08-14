@@ -50,9 +50,9 @@ export const learningApproach = [
 
 export const academicFacilities = [
   'Well-resourced classrooms',
-  'Science and STEM spaces',
-  'Library & reading corners',
   'Art and activity studios',
   'Sports and outdoor play areas',
+  'Outdoor learning spaces',
+  'Early years activity corners',
   'Digital learning support',
 ]

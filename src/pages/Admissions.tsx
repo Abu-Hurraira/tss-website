@@ -22,8 +22,7 @@ export default function Admissions() {
       <PageHero
         title="Admissions"
         description="A clear, supportive pathway from first inquiry to confident enrollment at Mial."
-        crumbs={[{ label: 'Admissions' }]}
-        image="/images/academics/early-years-classroom.jpg"
+        image="/images/hero/admissions-cover.jpg"
       />
       <section className="section-pad">
         <div className="container-wide">

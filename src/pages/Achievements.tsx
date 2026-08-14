@@ -11,7 +11,7 @@ export default function Achievements() {
 
   return (
     <>
-      <PageHero title="Achievements" description="Milestones that reflect our commitment to excellence." crumbs={[{ label: 'Achievements' }]} />
+      <PageHero title="Achievements" description="Milestones that reflect our commitment to excellence." />
       <section className="section-pad">
         <div className="container-wide grid gap-6 md:grid-cols-3">
           {achievements.map((item) => (

@@ -33,7 +33,6 @@ export default function EventDetail() {
       <PageHero
         title={item.title}
         description={`${item.category} · ${formatDate(item.date)}`}
-        crumbs={[{ label: 'Events', to: '/site/events' }, { label: item.title }]}
         image={item.image}
       />
       <section className="section-pad">

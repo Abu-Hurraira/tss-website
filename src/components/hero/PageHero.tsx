@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { Breadcrumbs } from '@/components/navigation/Breadcrumbs'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { fadeUp } from '@/lib/animations'
 import { asset } from '@/lib/asset'
@@ -8,12 +7,11 @@ import { cn } from '@/lib/utils'
 type Props = {
   title: string
   description?: string
-  crumbs: { label: string; to?: string }[]
   image?: string
   className?: string
 }
 
-export function PageHero({ title, description, crumbs, image, className }: Props) {
+export function PageHero({ title, description, image, className }: Props) {
   const reduced = useReducedMotion()
 
   return (
@@ -39,16 +37,10 @@ export function PageHero({ title, description, crumbs, image, className }: Props
         animate={reduced ? undefined : 'visible'}
         variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
       >
-        <motion.div variants={fadeUp} transition={{ duration: 0.55 }}>
-          <Breadcrumbs
-            items={[{ label: 'Home', to: '/site' }, ...crumbs]}
-            className="text-white/70 [&_a:hover]:text-white [&_span[aria-current]]:text-white"
-          />
-        </motion.div>
         <motion.h1
           variants={fadeUp}
           transition={{ duration: 0.6 }}
-          className="font-display mt-5 max-w-3xl text-4xl leading-tight font-semibold text-white md:text-5xl lg:text-6xl"
+          className="font-display max-w-3xl text-4xl leading-tight font-semibold text-white md:text-5xl lg:text-6xl"
         >
           {title}
         </motion.h1>

@@ -17,7 +17,6 @@ export default function Academics() {
       <PageHero
         title="Academics"
         description="A coherent journey from early years to senior school — rigorous, supportive, and future-focused."
-        crumbs={[{ label: 'Academics' }]}
         image="/images/academics/classroom-study.jpg"
       />
       <section className="section-pad">

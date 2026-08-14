@@ -8,11 +8,11 @@ export const campuses: Campus[] = [
     city: 'Mial',
     location: 'Mial, Pakistan',
     description:
-      'Our home campus in Mial offers a complete academic journey with modern classrooms, science facilities, outdoor spaces, and a caring community focused on excellence.',
-    facilities: ['Science labs', 'Library & resource centre', 'Sports grounds', 'Activity studios', 'Play areas'],
+      'Our home campus in Mial offers a complete academic journey with modern classrooms, outdoor spaces, and a caring community focused on excellence.',
+    facilities: ['Sports grounds', 'Activity studios', 'Play areas', 'Bright classrooms', 'Outdoor learning spaces'],
     phone: '0301 5391013',
     email: 'info@timeschool.edu',
-    image: '/images/gallery/campus/campus-building-courtyard.jpg',
+    image: '/images/gallery/campus/campus-courtyard-sunny.jpg',
   },
 ]
 

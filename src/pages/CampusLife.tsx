@@ -19,7 +19,6 @@ export default function CampusLife() {
       <PageHero
         title="Campus Life"
         description="Learning continues beyond the timetable — in play, clubs, competitions, and everyday community."
-        crumbs={[{ label: 'Campus Life' }]}
         image="/images/facilities/playground-garden.jpg"
       />
       <section className="section-pad">

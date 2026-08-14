@@ -17,7 +17,6 @@ export default function About() {
       <PageHero
         title="About Time School System Mial"
         description="An institution committed to academic excellence, character formation, and modern learning since 2018."
-        crumbs={[{ label: 'About' }]}
         image="/images/campus/campus-exterior-1.jpg"
       />
       <section className="section-pad">

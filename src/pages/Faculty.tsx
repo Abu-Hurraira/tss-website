@@ -11,7 +11,7 @@ export default function Faculty() {
 
   return (
     <>
-      <PageHero title="Faculty" description="Educators dedicated to academic excellence and student growth." crumbs={[{ label: 'Faculty' }]} />
+      <PageHero title="Faculty" description="Educators dedicated to academic excellence and student growth." />
       <section className="section-pad">
         <div className="container-wide grid gap-6 md:grid-cols-2">
           {faculty.map((person) => (
