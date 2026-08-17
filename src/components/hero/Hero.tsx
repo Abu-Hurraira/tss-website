@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
+import { ChevronDown } from 'lucide-react'
 import { site } from '@/data/site'
 import { fadeUp } from '@/lib/animations'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { Button } from '@/components/common/Button'
-import { BrandMark } from '@/components/common/BrandMark'
 import { asset } from '@/lib/asset'
 
 export function Hero() {
@@ -17,58 +17,47 @@ export function Hero() {
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          className="h-full w-full object-cover object-center"
-          initial={reduced ? false : { scale: 1.04, opacity: 0.92 }}
-          animate={reduced ? undefined : { scale: 1, opacity: 1 }}
-          transition={{ duration: 1.1, ease: 'easeOut' }}
+          className="h-full w-full object-cover"
+          initial={reduced ? false : { scale: 1.1 }}
+          animate={reduced ? undefined : { scale: 1 }}
+          transition={{ duration: 1.4, ease: 'easeOut' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/72 to-navy/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy/65 via-transparent to-navy/25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/78 to-navy/45" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-navy/30" />
       </div>
 
-      <div className="container-wide relative flex min-h-[100svh] flex-col justify-end pb-20 pt-28 md:justify-center md:pb-28 md:pt-24">
+      <div className="container-wide relative flex min-h-[100svh] flex-col justify-end pb-16 pt-32 md:justify-center md:pb-24 md:pt-28">
         <motion.div
           className="max-w-3xl"
           initial={reduced ? false : 'hidden'}
           animate={reduced ? undefined : 'visible'}
-          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+          variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
         >
-          <motion.div variants={fadeUp} transition={{ duration: 0.55 }} className="mb-8">
-            <BrandMark
-              titleClassName="text-3xl tracking-[0.22em] text-white md:text-4xl lg:text-5xl"
-              subtitleClassName="mt-1 text-base text-white/85 md:text-lg"
-              showCampus
-              campusClassName="mt-2 text-xs tracking-[0.2em] text-accent-orange"
-            />
-          </motion.div>
-          <motion.h1
-            variants={fadeUp}
-            transition={{ duration: 0.6 }}
-            className="font-display max-w-2xl text-[2.35rem] leading-[1.12] font-semibold text-white sm:text-5xl md:text-6xl"
-          >
-            {site.motto}
-          </motion.h1>
-          <motion.p
-            variants={fadeUp}
-            transition={{ duration: 0.6 }}
-            className="mt-5 max-w-lg text-base leading-relaxed text-white/78 md:text-lg"
-          >
-            Quality education in Mial — from early years through Grade 10.
+          <motion.p variants={fadeUp} transition={{ duration: 0.6 }} className="mb-4 text-xs font-semibold tracking-[0.22em] text-accent-orange uppercase">
+            TIME School System Mial · ESTB {site.established}
           </motion.p>
-          <motion.div variants={fadeUp} transition={{ duration: 0.6 }} className="mt-9 flex flex-wrap gap-3">
-            <Button to="/site/admissions" variant="orange" className="min-w-[10.5rem]">
-              Admissions
-            </Button>
-            <Button to="/site/contact" variant="ghost" className="min-w-[10.5rem]">
-              Contact
-            </Button>
+          <motion.h1 variants={fadeUp} transition={{ duration: 0.65 }} className="font-display text-4xl leading-[1.08] font-semibold text-white sm:text-5xl md:text-6xl lg:text-[4.25rem]">
+            Empowering Future Leaders Through Quality Education.
+          </motion.h1>
+          <motion.p variants={fadeUp} transition={{ duration: 0.65 }} className="mt-5 max-w-xl text-base leading-relaxed text-white/80 md:text-lg">
+            A premium academic community in Mial where rigorous learning, character, and modern campus life prepare students for tomorrow.
+          </motion.p>
+          <motion.div variants={fadeUp} transition={{ duration: 0.65 }} className="mt-8 flex flex-wrap gap-3">
+            <Button to="/site/admissions" variant="orange">Explore Admissions</Button>
+            <Button to="/site/about" variant="ghost">Discover TSS</Button>
           </motion.div>
         </motion.div>
+
+        <a href="#trust" className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-1 text-white/70 md:flex" aria-label="Scroll to content">
+          <span className="text-[11px] tracking-[0.18em] uppercase">Scroll</span>
+          <ChevronDown className="animate-bounce" size={18} />
+        </a>
       </div>
     </section>
   )
 }
 
 export function HeroSlider() {
+  // Reserved for multi-slide hero; currently uses cinematic single hero.
   return <Hero />
 }

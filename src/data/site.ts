@@ -21,28 +21,8 @@ export const site = {
 export const trustStats: TrustStat[] = [
   { id: 'students', label: 'Students', value: 200, suffix: '' },
   { id: 'faculty', label: 'Faculty & Staff', value: 15, suffix: '' },
+  { id: 'programs', label: 'Academic Pathways', value: 8, suffix: '' },
   { id: 'years', label: 'Years of Excellence', value: new Date().getFullYear() - 2018, suffix: '+' },
-]
-
-export const testimonials = [
-  {
-    id: 'parent-1',
-    quote: 'Teachers know our child by name and share clear progress updates. The campus feels safe, organised, and welcoming.',
-    name: 'Parent of a Grade 3 student',
-    role: 'Mial family',
-  },
-  {
-    id: 'parent-2',
-    quote: 'From early years to the upper grades, learning stays active and caring. We trust the school with both academics and character.',
-    name: 'Parent of a Grade 7 student',
-    role: 'Mial family',
-  },
-  {
-    id: 'parent-3',
-    quote: 'Admissions was straightforward, and the principal’s team is easy to reach. Our daughter looks forward to school each morning.',
-    name: 'Parent of a Grade 1 student',
-    role: 'Mial family',
-  },
 ]
 
 export const pillars: Pillar[] = [
@@ -58,21 +38,21 @@ export const pillars: Pillar[] = [
     title: 'Student-Centred Learning',
     description:
       'Teachers know every learner. Instruction is responsive, supportive, and designed to help each student grow with confidence.',
-    image: '/images/gallery/academics/early-years-room.jpg',
+    image: '/images/gallery/student-life/student-portrait-classroom.jpg',
   },
   {
     id: 'modern',
     title: 'Modern Learning Environment',
     description:
       'Bright classrooms, outdoor play spaces, and a campus that invites curiosity, collaboration, and disciplined study habits.',
-    image: '/images/gallery/campus/campus-courtyard-sunny.jpg',
+    image: '/images/gallery/campus/playground-garden.jpg',
   },
   {
     id: 'character',
     title: 'Character & Leadership',
     description:
       'We cultivate integrity, empathy, and responsibility — preparing students to lead with purpose in school and beyond.',
-    image: '/images/gallery/events/labour-day-outdoor.jpg',
+    image: '/images/gallery/events/academic-achievement.jpg',
   },
 ]
 
@@ -80,7 +60,7 @@ export const leadership: Leadership = {
   name: 'Muhammad Siddique',
   title: 'Principal',
   message:
-    'Education at TIME School System Mial is about more than exam scores. We shape intellect, character, and confidence — in partnership with every family.',
+    'At TIME School System Mial, we believe education is more than examination success. It is the careful shaping of intellect, character, and confidence. Our educators partner with families to nurture curious minds and compassionate leaders.',
   portrait: '/images/leadership/student-life-1.jpg',
 }
 

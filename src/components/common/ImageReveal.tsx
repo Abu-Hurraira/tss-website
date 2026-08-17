@@ -23,10 +23,10 @@ export function ImageReveal({
         loading={eager ? 'eager' : 'lazy'}
         decoding="async"
         className="h-full w-full object-cover"
-        initial={reduced ? false : { scale: 1.03, opacity: 0.7 }}
+        initial={reduced ? false : { scale: 1.08, opacity: 0.55 }}
         whileInView={reduced ? undefined : { scale: 1, opacity: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
+        viewport={{ once: true, amount: 0.25 }}
+        transition={{ duration: 0.75, ease: 'easeOut' }}
       />
     </div>
   )

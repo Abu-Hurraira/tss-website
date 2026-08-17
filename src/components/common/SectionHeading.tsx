@@ -35,11 +35,11 @@ export function SectionHeading({
           {eyebrow}
         </p>
       )}
-      <h2 className={cn('font-display max-w-3xl text-[1.85rem] leading-[1.18] font-semibold md:text-4xl lg:text-[2.55rem]', light ? 'text-white' : 'text-navy')}>
+      <h2 className={cn('font-display text-3xl leading-tight font-semibold md:text-4xl lg:text-[2.75rem]', light ? 'text-white' : 'text-navy')}>
         {title}
       </h2>
       {description && (
-        <p className={cn('mt-4 max-w-2xl text-base leading-relaxed md:text-[1.05rem]', light ? 'text-white/80' : 'text-ink-secondary')}>
+        <p className={cn('mt-4 text-base leading-relaxed md:text-lg', light ? 'text-white/80' : 'text-ink-secondary')}>
           {description}
         </p>
       )}

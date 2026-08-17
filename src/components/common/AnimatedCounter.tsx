@@ -6,7 +6,7 @@ export function AnimatedCounter({
   value,
   suffix = '',
   className,
-  duration = 900,
+  duration = 1400,
 }: {
   value: number
   suffix?: string
