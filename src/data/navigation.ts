@@ -26,11 +26,6 @@ export const galleryNewsItems: NavDropdownItem[] = [
     description: 'Open days and celebrations',
   },
   {
-    to: '/site/blog',
-    label: 'Blog',
-    description: 'Guides for families and learners',
-  },
-  {
     to: '/site/campus-life',
     label: 'Campus Life',
     description: 'Facilities, clubs, and activities',
