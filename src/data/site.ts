@@ -8,6 +8,8 @@ export const site = {
   established: 2018,
   email: 'info@timeschool.edu',
   phone: '0346 5018150',
+  /** WhatsApp chat link (Pakistan country code 92, no leading 0). */
+  whatsapp: 'https://wa.me/923465018150?text=Assalamualaikum%2C%20I%20want%20to%20inquire%20about%20TIME%20School%20System%20Mial.',
   website: 'https://timeschool.edu',
   address: 'Mial, Pakistan',
   social: {

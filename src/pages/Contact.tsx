@@ -58,6 +58,17 @@ export default function Contact() {
                   {site.phone}
                 </a>
               </p>
+              <p className="mt-2 text-sm text-ink-secondary">
+                WhatsApp:{' '}
+                <a
+                  className="font-semibold text-brand"
+                  href={site.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chat with principal
+                </a>
+              </p>
               <p className="mt-4 text-sm text-ink-muted">Office hours: Monday–Friday, 9:00 AM – 3:00 PM</p>
             </div>
             <div className="overflow-hidden rounded-[22px] border border-border bg-surface">
