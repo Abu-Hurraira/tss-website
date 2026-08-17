@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { PageHero } from '@/components/hero/PageHero'
 import { ContactForm } from '@/components/forms/ContactForm'
 import { SectionHeading } from '@/components/common/SectionHeading'
+import { WhatsAppFloat } from '@/components/common/WhatsAppFloat'
 import { primaryCampus } from '@/data/campuses'
 import { site } from '@/data/site'
 import { asset } from '@/lib/asset'
@@ -91,6 +92,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <WhatsAppFloat />
     </>
   )
 }
