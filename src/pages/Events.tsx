@@ -15,7 +15,7 @@ export default function Events() {
       <PageHero
         title="Events"
         description="Open houses, conferences, celebrations, and community gatherings."
-        image="/images/campus/gallery-cover.jpg"
+        image="/images/news/events-cover.jpg"
       />
       <section className="section-pad">
         <div className="container-wide">

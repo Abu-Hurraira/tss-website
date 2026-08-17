@@ -15,7 +15,6 @@ export default function Faculty() {
       <PageHero
         title="Faculty"
         description="Educators dedicated to academic excellence and student growth."
-        image="/images/gallery/campus/campus-courtyard-sunny.jpg"
       />
       <section className="section-pad">
         <div className="container-wide grid gap-6 md:grid-cols-2 lg:gap-8">

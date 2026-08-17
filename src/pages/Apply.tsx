@@ -14,7 +14,7 @@ export default function Apply() {
       <PageHero
         title="Apply Now"
         description="Share a few details and our admissions team will guide you through the next steps."
-        image="/images/gallery/campus/campus-courtyard-sunny.jpg"
+        image="/images/hero/hero-classroom.jpg"
       />
       <section className="section-pad">
         <div className="container-site grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">

@@ -19,7 +19,7 @@ export default function CampusLife() {
       <PageHero
         title="Campus Life"
         description="Learning continues beyond the timetable — in play, clubs, competitions, and everyday community."
-        image="/images/campus/gallery-cover.jpg"
+        image="/images/facilities/playground-garden.jpg"
       />
       <section className="section-pad">
         <div className="container-wide">
