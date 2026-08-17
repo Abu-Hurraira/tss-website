@@ -18,7 +18,7 @@ const categoryNotes: Record<string, string> = {
 
 export default function Gallery() {
   usePageSeo({
-    title: 'Gallery — Time School System Mial',
+    title: 'Gallery — TIME School System Mial',
     description: 'Browse campus, academics, events, and student life photography from TSS Mial.',
     path: '/site/gallery',
   })
@@ -39,7 +39,7 @@ export default function Gallery() {
     <>
       <PageHero
         title="Gallery"
-        description="A living album of Time School System Mial — campus spaces, classrooms, celebrations, and student life."
+        description="A living album of TIME School System Mial — campus spaces, classrooms, celebrations, and student life."
         image="/images/campus/gallery-cover.jpg"
       />
 

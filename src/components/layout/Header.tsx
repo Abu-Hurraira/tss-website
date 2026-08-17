@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils'
 import { asset } from '@/lib/asset'
 import { useScrollHeader } from '@/hooks/useScrollHeader'
 import { Navbar } from '@/components/navigation/Navbar'
+import { BrandMark } from '@/components/common/BrandMark'
 
 export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   useEffect(() => {
@@ -81,24 +82,13 @@ export function Header() {
             width={56}
             height={56}
           />
-          <div className="min-w-0 leading-tight">
-            <p
-              className={cn(
-                'truncate text-sm font-semibold tracking-wide md:text-base',
-                solid ? 'text-navy' : 'text-white',
-              )}
-            >
-              Time School System
-            </p>
-            <p
-              className={cn(
-                'text-[11px] font-medium tracking-[0.16em] uppercase',
-                solid ? 'text-ink-muted' : 'text-white/75',
-              )}
-            >
-              Mial
-            </p>
-          </div>
+          <BrandMark
+            compact
+            showCampus
+            titleClassName={solid ? 'text-navy' : 'text-white'}
+            subtitleClassName={solid ? 'text-ink-secondary' : 'text-white/85'}
+            campusClassName={solid ? 'text-ink-muted' : 'text-white/70'}
+          />
         </Link>
 
         <Navbar transparent={!solid} />

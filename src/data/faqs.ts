@@ -13,7 +13,7 @@ export const faqs: FaqItem[] = [
   },
   {
     question: 'Can we visit the campus before applying?',
-    answer: 'Yes. Contact our admissions team to schedule a visit to Time School System Mial.',
+    answer: 'Yes. Contact our admissions team to schedule a visit to TIME School System Mial.',
   },
   {
     question: 'How do fees work?',

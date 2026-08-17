@@ -9,8 +9,8 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function Contact() {
   usePageSeo({
-    title: 'Contact — Time School System Mial',
-    description: 'Contact Time School System Mial admissions and campus office.',
+    title: 'Contact — TIME School System Mial',
+    description: 'Contact TIME School System Mial admissions and campus office.',
     path: '/site/contact',
   })
 

@@ -13,8 +13,8 @@ const filters: Array<'All' | ContentCategory> = ['All', 'News', 'Events', 'Annou
 
 export default function News() {
   usePageSeo({
-    title: 'News & Events — Time School System Mial',
-    description: 'Latest news, events, and announcements from Time School System Mial.',
+    title: 'News & Events — TIME School System Mial',
+    description: 'Latest news, events, and announcements from TIME School System Mial.',
     path: '/site/news',
   })
 
@@ -34,7 +34,7 @@ export default function News() {
     <>
       <PageHero
         title="News & Events"
-        description="Announcements, academic stories, celebrations, and important dates from Time School System Mial."
+        description="Announcements, academic stories, celebrations, and important dates from TIME School System Mial."
         image="/images/news/news-cover.jpg"
       />
 

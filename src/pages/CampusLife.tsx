@@ -9,7 +9,7 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function CampusLife() {
   usePageSeo({
-    title: 'Campus Life — Time School System Mial',
+    title: 'Campus Life — TIME School System Mial',
     description: 'Explore facilities, sports, clubs, and student life at TSS Mial.',
     path: '/site/campus-life',
   })

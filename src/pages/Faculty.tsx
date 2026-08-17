@@ -4,7 +4,7 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function Faculty() {
   usePageSeo({
-    title: 'Faculty — Time School System Mial',
+    title: 'Faculty — TIME School System Mial',
     description: 'Meet the leadership and faculty community at TSS Mial.',
     path: '/site/faculty',
   })

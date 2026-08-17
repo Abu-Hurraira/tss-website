@@ -9,7 +9,7 @@ export function TrustSection() {
         <SectionHeading
           eyebrow="Institution"
           title="A trusted academic home in Mial."
-          description="Time School System Mial combines rigorous academics with a caring campus culture — preparing students for leadership with integrity."
+          description="TIME School System Mial combines rigorous academics with a caring campus culture — preparing students for leadership with integrity."
         />
         <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4 lg:grid-cols-2">
           {trustStats.map((stat) => (

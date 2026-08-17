@@ -5,8 +5,8 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function Events() {
   usePageSeo({
-    title: 'Events — Time School System Mial',
-    description: 'Upcoming and featured events at Time School System Mial.',
+    title: 'Events — TIME School System Mial',
+    description: 'Upcoming and featured events at TIME School System Mial.',
     path: '/site/events',
   })
 

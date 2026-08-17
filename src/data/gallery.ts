@@ -14,7 +14,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: 'campus-courtyard-sunny',
     src: '/images/gallery/campus/campus-courtyard-sunny.jpg',
-    alt: 'Sunny courtyard at Time School System Mial',
+    alt: 'Sunny courtyard at TIME School System Mial',
     caption: 'Mial campus courtyard on a bright school day',
     category: 'Campus',
   },
@@ -70,7 +70,7 @@ export const galleryItems: GalleryItem[] = [
   {
     id: 'welcome-classroom',
     src: '/images/gallery/academics/welcome-classroom.jpg',
-    alt: 'Student at desk with Welcome to Time School System chalkboard',
+    alt: 'Student at desk with Welcome to TIME School System chalkboard',
     caption: 'A warm welcome into every school day',
     category: 'Academics',
   },

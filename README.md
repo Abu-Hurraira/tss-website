@@ -1,6 +1,6 @@
 # TIME School System — Public Website
 
-Standalone institutional website for **Time School System Mial**.
+Standalone institutional website for **TIME School System Mial**.
 
 ## Live site
 
@@ -26,7 +26,7 @@ npm run dev
 
 ## Campus
 
-**Time School System Mial** (ESTB 2018)
+**TIME School System Mial** (ESTB 2018)
 
 ## Docs
 

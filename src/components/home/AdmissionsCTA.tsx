@@ -2,7 +2,7 @@ import { Button } from '@/components/common/Button'
 import { cn } from '@/lib/utils'
 
 export function AdmissionsCTA({
-  title = 'Begin your child’s journey at Time School System Mial.',
+  title = 'Begin your child’s journey at TIME School System Mial.',
   description = 'Speak with admissions or visit campus to learn more about our programmes.',
   className,
 }: {
@@ -33,7 +33,7 @@ export function AdmissionsCTA({
 export function ContactCTA() {
   return (
     <AdmissionsCTA
-      title="Visit Time School System Mial."
+      title="Visit TIME School System Mial."
       description="Schedule a campus visit or send a message — our team is ready to help."
     />
   )

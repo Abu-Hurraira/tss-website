@@ -5,12 +5,12 @@ export const newsItems: NewsItem[] = [
     slug: 'welcome-to-the-new-academic-year',
     title: 'Welcome to the New Academic Year',
     summary:
-      'Students, families, and faculty begin another year of ambitious learning at Time School System Mial.',
+      'Students, families, and faculty begin another year of ambitious learning at TIME School System Mial.',
     category: 'Announcements',
     date: '2026-08-01',
     image: '/images/gallery/community/community-2.jpg',
     body: [
-      'Time School System Mial welcomes families to a new academic year filled with purposeful teaching and enriched activities across every grade.',
+      'TIME School System Mial welcomes families to a new academic year filled with purposeful teaching and enriched activities across every grade.',
       'Orientation sessions introduce classroom expectations, communication channels, and the daily habits that help students thrive — from early years through secondary.',
       'Our teachers have prepared learning goals for the term, and we encourage parents to stay connected through regular updates and school events.',
       'We look forward to partnering with every family as we continue empowering future leaders through quality education.',
@@ -25,7 +25,7 @@ export const newsItems: NewsItem[] = [
     date: '2026-05-01',
     image: '/images/gallery/events/labour-day-outdoor.jpg',
     body: [
-      'Labour Day at Time School System Mial brought classrooms and courtyard to life with hands-on stations celebrating hard work, teamwork, and service.',
+      'Labour Day at TIME School System Mial brought classrooms and courtyard to life with hands-on stations celebrating hard work, teamwork, and service.',
       'Students built models, tried role-play activities, and presented classroom projects that honoured workers across many professions.',
       'Teachers guided learners to connect creativity with character — dreaming big while respecting the people who keep communities strong.',
       'Photos from the day are available in our Gallery under Events.',
@@ -40,7 +40,7 @@ export const newsItems: NewsItem[] = [
     date: '2026-04-20',
     image: '/images/gallery/events/certificate-appreciation.jpg',
     body: [
-      'Time School System Mial celebrated students who demonstrated outstanding performance in the Final Examination cycle.',
+      'TIME School System Mial celebrated students who demonstrated outstanding performance in the Final Examination cycle.',
       'Certificates of Appreciation recognised strong academic results, consistent effort, and the support of families throughout the year.',
       'Principal Muhammad Siddique congratulated achievers and encouraged every learner to set clear goals for the next term.',
       'Families are invited to continue celebrating progress at home with regular reading, revision routines, and positive encouragement.',
@@ -83,7 +83,7 @@ export const newsItems: NewsItem[] = [
     date: '2026-01-22',
     image: '/images/gallery/academics/welcome-classroom.jpg',
     body: [
-      'A vibrant reading culture is central to academic success at Time School System Mial.',
+      'A vibrant reading culture is central to academic success at TIME School System Mial.',
       'Classrooms protect quiet reading time, celebrate storytelling, and help students build vocabulary through guided practice.',
       'Families are encouraged to protect daily reading time at home to reinforce classroom progress and grow lifelong learners.',
     ],
@@ -100,7 +100,7 @@ export const eventItems: EventItem[] = [
     date: '2026-09-12',
     image: '/images/gallery/campus/campus-courtyard-sunny.jpg',
     body: [
-      'Prospective families are invited to an Open House featuring campus tours and admissions guidance at Time School System Mial.',
+      'Prospective families are invited to an Open House featuring campus tours and admissions guidance at TIME School System Mial.',
       'You will meet leadership, walk through classrooms, and hear how our pathways support learners from Pre-Nursery through Grade 10.',
       'Bring questions about academics, school day routines, and enrollment timelines — our team is ready to help.',
       'Register your interest through the Contact page so we can reserve your visit slot.',
@@ -129,7 +129,7 @@ export const eventItems: EventItem[] = [
     date: '2026-12-15',
     image: '/images/gallery/events/certificate-appreciation.jpg',
     body: [
-      'Prize Day recognises excellence in academics, character, arts, and service at Time School System Mial.',
+      'Prize Day recognises excellence in academics, character, arts, and service at TIME School System Mial.',
       'Students are celebrated not only for scores, but for consistency, kindness, leadership, and contribution to school life.',
       'Families are warmly invited to join us as we honour hard work and inspire the next chapter of learning.',
     ],

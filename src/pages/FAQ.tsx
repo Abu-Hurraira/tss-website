@@ -5,7 +5,7 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function FAQ() {
   usePageSeo({
-    title: 'FAQ — Time School System Mial',
+    title: 'FAQ — TIME School System Mial',
     description: 'Frequently asked questions about admissions and campus life.',
     path: '/site/faq',
   })

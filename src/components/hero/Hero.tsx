@@ -34,7 +34,7 @@ export function Hero() {
           variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
         >
           <motion.p variants={fadeUp} transition={{ duration: 0.6 }} className="mb-4 text-xs font-semibold tracking-[0.22em] text-accent-orange uppercase">
-            {site.campusName} · ESTB {site.established}
+            TIME School System Mial · ESTB {site.established}
           </motion.p>
           <motion.h1 variants={fadeUp} transition={{ duration: 0.65 }} className="font-display text-4xl leading-[1.08] font-semibold text-white sm:text-5xl md:text-6xl lg:text-[4.25rem]">
             Empowering Future Leaders Through Quality Education.

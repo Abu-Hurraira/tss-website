@@ -4,8 +4,8 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function Careers() {
   usePageSeo({
-    title: 'Careers — Time School System Mial',
-    description: 'Explore career opportunities at Time School System Mial.',
+    title: 'Careers — TIME School System Mial',
+    description: 'Explore career opportunities at TIME School System Mial.',
     path: '/site/careers',
   })
 
@@ -20,7 +20,7 @@ export default function Careers() {
           <div>
             <h2 className="font-display text-3xl font-semibold text-navy">Work with us</h2>
             <p className="mt-3 text-ink-secondary">
-              Share your interest and our HR team will contact you about current or upcoming openings at Time School System Mial.
+              Share your interest and our HR team will contact you about current or upcoming openings at TIME School System Mial.
             </p>
           </div>
           <div className="rounded-[22px] border border-border bg-surface p-6 md:p-8">

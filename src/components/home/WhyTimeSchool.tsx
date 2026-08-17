@@ -8,7 +8,7 @@ export function WhyTimeSchool() {
     <section className="section-pad">
       <div className="container-wide">
         <SectionHeading
-          eyebrow="Why Time School"
+          eyebrow="Why TIME School"
           title="Four pillars that shape every school day."
           description="Excellence is visible in classrooms, relationships, and the environments where students grow."
         />

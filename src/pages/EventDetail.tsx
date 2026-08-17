@@ -9,8 +9,8 @@ export default function EventDetail() {
   const item = getArticleBySlug(slug)
 
   usePageSeo({
-    title: item ? `${item.title} — Time School System Mial` : 'Event — Time School System Mial',
-    description: item?.summary || 'Event details from Time School System Mial.',
+    title: item ? `${item.title} — TIME School System Mial` : 'Event — TIME School System Mial',
+    description: item?.summary || 'Event details from TIME School System Mial.',
     path: `/site/events/${slug}`,
     image: item?.image,
   })

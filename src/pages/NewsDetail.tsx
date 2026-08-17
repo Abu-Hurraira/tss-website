@@ -14,8 +14,8 @@ export default function NewsDetail() {
     .slice(0, 3)
 
   usePageSeo({
-    title: item ? `${item.title} — Time School System` : 'Article — Time School System',
-    description: item?.summary || 'News from Time School System Mial.',
+    title: item ? `${item.title} — TIME School System` : 'Article — TIME School System',
+    description: item?.summary || 'News from TIME School System Mial.',
     path: `/site/news/${slug}`,
     image: item?.image,
   })

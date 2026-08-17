@@ -1,13 +1,13 @@
 import type { Leadership, Pillar, TrustStat } from '@/types/school'
 
 export const site = {
-  name: 'Time School System',
+  name: 'TIME School System',
   shortName: 'TSS',
-  campusName: 'Time School System Mial',
+  campusName: 'TIME School System Mial',
   motto: 'Empowering Future Leaders Through Quality Education.',
   established: 2018,
   email: 'info@timeschool.edu',
-  phone: '0301 5391013',
+  phone: '0346 5018150',
   website: 'https://timeschool.edu',
   address: 'Mial, Pakistan',
   social: {
@@ -60,7 +60,7 @@ export const leadership: Leadership = {
   name: 'Muhammad Siddique',
   title: 'Principal',
   message:
-    'At Time School System Mial, we believe education is more than examination success. It is the careful shaping of intellect, character, and confidence. Our educators partner with families to nurture curious minds and compassionate leaders.',
+    'At TIME School System Mial, we believe education is more than examination success. It is the careful shaping of intellect, character, and confidence. Our educators partner with families to nurture curious minds and compassionate leaders.',
   portrait: '/images/leadership/student-life-1.jpg',
 }
 

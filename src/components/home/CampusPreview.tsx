@@ -9,7 +9,7 @@ export function CampusPreview() {
       <div className="container-wide">
         <SectionHeading
           eyebrow="Our campus"
-          title="Time School System Mial"
+          title="TIME School System Mial"
           description="One focused campus — modern classrooms, outdoor spaces, and a community built for learning."
         />
         <article className="mt-10 overflow-hidden rounded-[22px] border border-border bg-surface lg:grid lg:grid-cols-2">

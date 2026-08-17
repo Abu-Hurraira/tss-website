@@ -2,7 +2,7 @@ export const faculty = [
   {
     name: 'Muhammad Siddique',
     role: 'Principal',
-    bio: 'Leads academic vision, culture, and family partnership at Time School System Mial.',
+    bio: 'Leads academic vision, culture, and family partnership at TIME School System Mial.',
   },
   {
     name: 'Faculty Team',

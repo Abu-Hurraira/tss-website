@@ -4,7 +4,7 @@ import { usePageSeo } from '@/lib/seo'
 
 export default function Achievements() {
   usePageSeo({
-    title: 'Achievements — Time School System Mial',
+    title: 'Achievements — TIME School System Mial',
     description: 'Academic growth, character awards, and community highlights.',
     path: '/site/achievements',
   })
