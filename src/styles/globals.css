@@ -64,9 +64,9 @@
 
 @layer utilities {
   .font-display { font-family: var(--font-display); }
-  .container-site { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
-  .container-wide { width: min(1280px, calc(100% - 2rem)); margin-inline: auto; }
-  .section-pad { padding-block: clamp(3.5rem, 6vw, 6rem); }
+  .container-site { width: min(1080px, calc(100% - 2rem)); margin-inline: auto; }
+  .container-wide { width: min(1200px, calc(100% - 2.5rem)); margin-inline: auto; }
+  .section-pad { padding-block: clamp(4.25rem, 7.5vw, 7.25rem); }
   .gradient-navy {
     background:
       radial-gradient(ellipse 80% 60% at 20% 20%, rgb(12 85 143 / 0.35), transparent 55%),

@@ -17,7 +17,7 @@ export default function Academics() {
       <PageHero
         title="Academics"
         description="A coherent journey from early years to senior school — rigorous, supportive, and future-focused."
-        image="/images/academics/classroom-study.jpg"
+        image="/images/gallery/campus/campus-courtyard-sunny.jpg"
       />
       <section className="section-pad">
         <div className="container-wide">

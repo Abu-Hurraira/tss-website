@@ -78,9 +78,9 @@ export function Header() {
           <img
             src={asset('/logo.png')}
             alt={`${site.campusName} logo`}
-            className="h-12 w-12 shrink-0 rounded-full object-cover md:h-14 md:w-14"
-            width={56}
-            height={56}
+            className="h-11 w-11 shrink-0 rounded-full object-cover md:h-12 md:w-12"
+            width={48}
+            height={48}
           />
           <BrandMark
             compact

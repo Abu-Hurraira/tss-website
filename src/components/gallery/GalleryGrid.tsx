@@ -53,7 +53,7 @@ export function GalleryItemButton({
           alt={item.alt}
           loading="lazy"
           decoding="async"
-          className="w-full object-cover transition duration-500 group-hover:scale-105"
+          className="w-full object-cover object-center transition duration-500 group-hover:scale-[1.02]"
         />
         <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/80 to-transparent p-4 text-left text-sm text-white opacity-0 transition group-hover:opacity-100">
           {item.caption}

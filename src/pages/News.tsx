@@ -35,7 +35,7 @@ export default function News() {
       <PageHero
         title="News & Events"
         description="Announcements, academic stories, celebrations, and important dates from TIME School System Mial."
-        image="/images/news/news-cover.jpg"
+        image="/images/gallery/campus/campus-courtyard-sunny.jpg"
       />
 
       <section className="section-pad border-b border-border">

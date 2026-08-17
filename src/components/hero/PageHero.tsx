@@ -22,10 +22,10 @@ export function PageHero({ title, description, image, className }: Props) {
           alt=""
           loading="eager"
           decoding="async"
-          className="h-full w-full object-cover"
-          initial={reduced ? false : { scale: 1.08 }}
+          className="h-full w-full object-cover object-center"
+          initial={reduced ? false : { scale: 1.03 }}
           animate={reduced ? undefined : { scale: 1 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
+          transition={{ duration: 1, ease: 'easeOut' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/78 to-navy/50" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy/55 via-transparent to-navy/25" />
