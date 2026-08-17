@@ -5,6 +5,7 @@ export const primaryNav: NavLink[] = [
   { to: '/site/about', label: 'About' },
   { to: '/site/academics', label: 'Academics' },
   { to: '/site/admissions', label: 'Admissions' },
+  { to: '/site/blog', label: 'Blog' },
   { to: '/site/contact', label: 'Contact' },
 ]
 
@@ -25,6 +26,11 @@ export const galleryNewsItems: NavDropdownItem[] = [
     description: 'Open days and celebrations',
   },
   {
+    to: '/site/blog',
+    label: 'Blog',
+    description: 'Guides for families and learners',
+  },
+  {
     to: '/site/campus-life',
     label: 'Campus Life',
     description: 'Facilities, clubs, and activities',
@@ -35,6 +41,7 @@ export const footerLinks = [
   { to: '/site/about', label: 'About' },
   { to: '/site/academics', label: 'Academics' },
   { to: '/site/admissions', label: 'Admissions' },
+  { to: '/site/blog', label: 'Blog' },
   { to: '/site/campus-life', label: 'Campus Life' },
   { to: '/site/gallery', label: 'Gallery' },
   { to: '/site/news', label: 'News' },

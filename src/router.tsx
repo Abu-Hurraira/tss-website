@@ -11,6 +11,8 @@ import News from '@/pages/News'
 import NewsDetail from '@/pages/NewsDetail'
 import Events from '@/pages/Events'
 import EventDetail from '@/pages/EventDetail'
+import Blog from '@/pages/Blog'
+import BlogDetail from '@/pages/BlogDetail'
 import Contact from '@/pages/Contact'
 import FAQ from '@/pages/FAQ'
 import Faculty from '@/pages/Faculty'
@@ -34,6 +36,8 @@ export function AppRouter() {
         <Route path="news/:slug" element={<NewsDetail />} />
         <Route path="events" element={<Events />} />
         <Route path="events/:slug" element={<EventDetail />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="blog/:slug" element={<BlogDetail />} />
         <Route path="contact" element={<Contact />} />
         <Route path="faq" element={<FAQ />} />
         <Route path="faculty" element={<Faculty />} />

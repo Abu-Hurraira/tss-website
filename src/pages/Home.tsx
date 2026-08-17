@@ -6,6 +6,7 @@ import { CampusPreview } from '@/components/home/CampusPreview'
 import { LeadershipPreview } from '@/components/home/LeadershipPreview'
 import { GalleryPreview } from '@/components/home/GalleryPreview'
 import { NewsPreview } from '@/components/home/NewsPreview'
+import { BlogPreview } from '@/components/home/BlogPreview'
 import { AdmissionsCTA } from '@/components/home/AdmissionsCTA'
 import { site } from '@/data/site'
 import { usePageSeo } from '@/lib/seo'
@@ -27,6 +28,7 @@ export default function Home() {
       <LeadershipPreview />
       <GalleryPreview />
       <NewsPreview />
+      <BlogPreview />
       <AdmissionsCTA />
     </>
   )
