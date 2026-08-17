@@ -7,6 +7,7 @@ import { site } from '@/data/site'
 import { cn } from '@/lib/utils'
 import { asset } from '@/lib/asset'
 import { useScrollHeader } from '@/hooks/useScrollHeader'
+import { useDarkHeroRoute } from '@/hooks/useDarkHeroRoute'
 import { Navbar } from '@/components/navigation/Navbar'
 import { BrandMark } from '@/components/common/BrandMark'
 
@@ -61,8 +62,9 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
 
 export function Header() {
   const scrolled = useScrollHeader()
+  const darkHero = useDarkHeroRoute()
   const [open, setOpen] = useState(false)
-  const solid = scrolled || open
+  const solid = scrolled || open || !darkHero
 
   return (
     <header
@@ -78,9 +80,9 @@ export function Header() {
           <img
             src={asset('/logo.png')}
             alt={`${site.campusName} logo`}
-            className="h-11 w-11 shrink-0 rounded-full object-cover md:h-12 md:w-12"
-            width={48}
-            height={48}
+            className="h-12 w-12 shrink-0 rounded-full object-cover md:h-14 md:w-14"
+            width={56}
+            height={56}
           />
           <BrandMark
             compact

@@ -15,11 +15,16 @@ export default function NotFound() {
         <p className="text-sm font-semibold tracking-[0.16em] text-brand uppercase">404</p>
         <h1 className="font-display mt-3 text-4xl font-semibold text-navy md:text-5xl">Page not found</h1>
         <p className="mx-auto mt-4 max-w-md text-ink-secondary">
-          The page you are looking for may have moved. Return home or explore admissions.
+          The page you are looking for may have moved. Return home, browse the blog, or explore admissions.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Button to="/site">Back to Home</Button>
-          <Button to="/site/admissions" variant="secondary">Admissions</Button>
+          <Button to="/site/blog" variant="secondary">
+            Blog
+          </Button>
+          <Button to="/site/admissions" variant="secondary">
+            Admissions
+          </Button>
         </div>
         <Link to="/site/contact" className="mt-6 inline-block text-sm font-semibold text-brand">
           Contact us
